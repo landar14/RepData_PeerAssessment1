@@ -58,6 +58,7 @@ hist(temp, breaks=seq(min(temp), max(temp), l = 10 ),
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 - Calculate and report the mean and median total number of steps taken per day   
+-- Answer: mean=~10,766, median=10,765
 
 ```r
 mean(dailystep, na.rm=TRUE)
@@ -101,7 +102,8 @@ interval[match(max(interval),interval)]
 
 ###4. Inputing missing values  
 
-- Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs)
+- Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with NAs)  
+-- Answer: 2304  
 
 ```r
 sum(is.na(data$step))
@@ -147,7 +149,7 @@ median(newdailystep)
 ## [1] 10766.19
 ```
 - Do these values differ from the estimates from the first part of the assignment?   
--- Answer: Both mean and median are very close to what they were before the NA values are being filled in  
+-- Answer: mean = ~10,766; median = ~ 10766. Both mean and median are very close to what they were before the NA values are being filled in  
 
 - What is the impact of inputing missing data on the estimates of the total daily number of steps?   
 -- Answer: Other than making the the histogram more concentrated towards the mean, there is not whole lot of impact.  
